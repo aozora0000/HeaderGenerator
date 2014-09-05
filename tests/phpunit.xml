@@ -1,0 +1,21 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="../vendor/autoload.php"
+         cacheTokens="true"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         verbose="false">
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="false">
+            <directory>../src/Aozora0000</directory>
+        </whitelist>
+    </filter>
+    <testsuite name="Aozora0000\HeaderGenerator Test Suite">
+        <directory>.</directory>
+    </testsuite>
+</phpunit>
