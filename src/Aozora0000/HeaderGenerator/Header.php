@@ -80,7 +80,7 @@
                     header(self::CODE503);
                     return self::CODE503;break;
                 default:
-                    throw new Exception("STATUS CODE NOT FOUND");
+                    throw new \Exception("STATUS CODE NOT FOUND");
             }
         }
         /*
@@ -103,7 +103,7 @@
                         return ["code"=>self::CODE308,"url"=>$url];exit;
                 }
             } else {
-                throw new Exeption("Not Set Redirect URL");
+                throw new \Exeption("Not Set Redirect URL");
             }
         }
         /*
@@ -118,7 +118,7 @@
                 if(is_int($filesize)) {
                     header("Content-length: {$filesize}");
                 } else {
-                    throw new Exception("CONTENT LENGTH INTEGER ONLY");
+                    throw new \Exception("CONTENT LENGTH INTEGER ONLY");
                 }
             }
             if(is_string($filename)) {
