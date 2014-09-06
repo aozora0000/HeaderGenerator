@@ -3,7 +3,9 @@ php:
 - 5.4
 - 5.5
 - hhvm
-script: vendor/bin/phpunit tests/
+script:
+- composer install
+- vendor/bin/phpunit tests/
 notifications:
   hipchat:
     rooms:
